@@ -1,0 +1,13 @@
+.header {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.recipe__container {
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+}
