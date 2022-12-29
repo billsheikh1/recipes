@@ -1,0 +1,27 @@
+{
+    "recipes": [
+        {
+            "name": "Pizza",
+            "cookTime": 0,
+            "prepTime": 0,
+            "ingredients": [
+                {
+                    "name": "cheese",
+                    "measurementAmount": 100,
+                    "measurementUnit": "grams" 
+                },
+                {
+                    "name": "tomatoes",
+                    "measurementAmount": 100,
+                    "measurementUnit": "grams"
+                },
+                {
+                    "name": "Pizza base",
+                    "measurementAmount": 1,
+                    "measurementUnit": "total"
+                }
+            ],
+            "method": "1. Layout base.\\n2. Place Tomatoes.\\n3. Add cheese."
+        }
+    ]
+}
