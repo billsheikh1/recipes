@@ -1,7 +1,7 @@
 import { TRecipe } from '../../models/TRecipe';
+import './Recipe.css';
 
 function Recipe({name, ingredients, method, prepTime, cookTime}: TRecipe) {
-    console.log(ingredients);
     return (
         <section className="recipe__container">
             <header className="recipe__header">
@@ -12,7 +12,13 @@ function Recipe({name, ingredients, method, prepTime, cookTime}: TRecipe) {
                 Ingredients
                 </header>
                 <main className="recipe__ingredients__body">
-
+                    <ol>
+                        {
+                            ingredients.map((ingredient, i) => 
+                                <li key={i}>{`${ingredient.name}, ${ingredient.measurementAmount} ${ingredient.measurementUnit}`}</li>
+                            )
+                        }
+                    </ol>
                 </main>
             </section>
             <section className="recipe__method">
@@ -20,7 +26,11 @@ function Recipe({name, ingredients, method, prepTime, cookTime}: TRecipe) {
                 Method
                 </header>
                 <main className="recipe__method__body">
-                    {method}
+                    <ol>
+                        {
+                            method.map((item, i) => <li key={i}>{item.details}</li>)
+                        }
+                    </ol>
                 </main>
             </section>
         </section>

@@ -1,0 +1,20 @@
+.recipe__container {
+    border: 1px solid black;
+    font-family: 'Trebuchet MS';
+    display: inline-block;
+    min-height: 50vh;
+    margin: 10px;
+}
+
+.recipe__header {
+    font-weight: bold;
+    font-size: 10vh;
+}
+
+.recipe__ingredients__header, .recipe__method__header {
+    font-weight: bold;
+}
+
+.recipe__ingredients__body, .recipe__method__body {
+    font-size: 4.5vh;
+}

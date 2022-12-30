@@ -1,9 +1,10 @@
-import { Ingredient } from './Ingreident';
+import { TIngredient } from './TIngreident';
+import { TMethod } from './TMethod';
 
 export type TRecipe = {
     name: string;
-    ingredients: [Ingredient];
-    method: string;
+    ingredients: [TIngredient];
+    method: [TMethod];
     cookTime: number;
     prepTime: number;
 }

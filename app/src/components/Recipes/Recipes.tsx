@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Recipe from '../Recipe/Recipe';
 import { TRecipe } from '../../models/TRecipe'
+import './Recipes.css';
 
 function Recipes() {
 
@@ -13,7 +14,7 @@ function Recipes() {
     }, []);
 
     return (
-        <section className="recipes-container">
+        <section className="recipes__container">
             {
                 recipes.map((recipe, i) => <Recipe name={recipe.name}
                                                    ingredients={recipe.ingredients}

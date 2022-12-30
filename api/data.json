@@ -2,8 +2,8 @@
     "recipes": [
         {
             "name": "Pizza",
-            "cookTime": 0,
-            "prepTime": 0,
+            "cookTime": 10,
+            "prepTime": 30,
             "ingredients": [
                 {
                     "name": "cheese",
@@ -21,7 +21,39 @@
                     "measurementUnit": "total"
                 }
             ],
-            "method": "1. Layout base.\\n2. Place Tomatoes.\\n3. Add cheese."
+            "method": [
+                {
+                    "details": "Lay out base."
+                },
+                {
+                    "details": "Place tomatoes."
+                },
+                {
+                    "details": "Add cheese."
+                }
+            ]
+        },
+        {
+            "name": "Chocolate Cake",
+            "cookTime": 20,
+            "prepTime": 20,
+            "ingredients": [
+                {
+                    "name": "flour",
+                    "measurementAmount": 200,
+                    "measurementUnit": "grams"
+                },
+                {
+                    "name": "chocolate",
+                    "measurementAmount": 50,
+                    "measurementUnit": "grams"
+                }
+            ],
+            "method": [
+                {
+                    "details": "mix ingredients"
+                }
+            ]
         }
     ]
 }
